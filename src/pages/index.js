@@ -34,6 +34,14 @@ const IndexPage = () => (
     <p>
       Check out our <Link to="/store/">Coffee First store!</Link>
     </p>
+    <h2>This is a Fictitiuos Demo Page</h2>
+    <br />
+    <p>
+      This is an example store using Gatsby, an amazing static site generator
+      that makes use of React to render flat HTML files on the user's end. In
+      this example, we will also utilize/implement a payment API through Stripe
+      for transactions (demo only).
+    </p>
   </Layout>
 )
 
