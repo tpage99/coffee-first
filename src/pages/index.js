@@ -17,7 +17,7 @@ const IndexPage = () => (
       We sell coffee, things to make coffee, books and magazines about coffee,
       pictures of coffee, things with coffee on them, and did we mention coffee?
     </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `500px`, margin: `auto`, marginBottom: `1.45rem` }}>
       <Image />
       <p>
         Photo by{" "}
@@ -31,7 +31,9 @@ const IndexPage = () => (
         on Unsplash.
       </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <p>
+      Check out our <Link to="/store/">Coffee First store!</Link>
+    </p>
   </Layout>
 )
 
