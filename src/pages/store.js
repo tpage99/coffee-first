@@ -18,7 +18,7 @@ class Store extends React.Component {
         <p>
           This is where you can shop for all of your coffee needs and wants!
         </p>
-        <ul>
+        <ul className="grid">
           {Object.keys(this.state.storeItems).map(key => (
             <CoffeeItems
               key={key}
