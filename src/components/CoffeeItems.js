@@ -11,8 +11,7 @@ const formatPrice = cents => {
 
 class CoffeeItems extends React.Component {
   render() {
-    const { image, name, price, desc, category, status } = this.props.details
-    const isAvailable = status === "available"
+    const { image, name, price, desc, category } = this.props.details
     return (
       <div className="card">
         <li>

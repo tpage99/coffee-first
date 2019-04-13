@@ -2,8 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import storeItems from "./store-items"
-import CoffeeItems from "./CoffeeItems/CoffeeItems"
+
+import storeItems from "../components/store-items"
+import CoffeeItems from "../components/CoffeeItems"
+import Celebration from "../assets/celebration.svg"
 
 class Store extends React.Component {
   state = {
@@ -14,8 +16,9 @@ class Store extends React.Component {
     return (
       <Layout>
         <SEO title="Store" />
-        <h1>Welcome to Our Store!</h1>
-        <p>
+        <h1 style={{ textAlign: `center` }}>Welcome to Our Store!</h1>
+        <Celebration className="center-svg" />
+        <p style={{ textAlign: `center` }}>
           This is where you can shop for all of your coffee needs and wants!
         </p>
         <ul className="grid">
