@@ -4,15 +4,17 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import GetCoffee from "../assets/getting_coffee.svg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`coffee`, `store`, `beans`]} />
     <h1>Welcome to Coffee First!</h1>
     <p>
       We believe in viably sourced, single origin, conflict free, sustainably
       produced, and energy efficient coffee production.
     </p>
+    <GetCoffee className="center-svg" />
     <p>
       We sell coffee, things to make coffee, books and magazines about coffee,
       pictures of coffee, things with coffee on them, and did we mention coffee?
