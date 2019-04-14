@@ -156,6 +156,12 @@ h6 {
 
 /* removed a lot of CSS but this is the end of the gatsby default template styling */
 
+ul {
+  display: block;
+  margin: auto;
+  padding: 0;
+}
+
 button {
   display: inline-block;
   border-radius: 8px;
