@@ -26,7 +26,12 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.coffeeHome.childImageSharp.fluid} />}
+    render={data => (
+      <Img
+        fluid={data.coffeeHome.childImageSharp.fluid}
+        className="feature-img"
+      />
+    )}
   />
 )
 export default Image

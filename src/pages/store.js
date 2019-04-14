@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -21,7 +21,7 @@ class Store extends React.Component {
         <p style={{ textAlign: `center` }}>
           This is where you can shop for all of your coffee needs and wants!
         </p>
-        <ul className="grid">
+        <ul>
           {Object.keys(this.state.storeItems).map(key => (
             <CoffeeItems
               key={key}
@@ -31,8 +31,10 @@ class Store extends React.Component {
           ))}
         </ul>
         <p>
-          Our work here is done. Head on{" "}
-          <Link to="/">back to the homepage</Link>.
+          Our work here is done. Head on back to the{" "}
+          <Link to="/">
+            <button>homepage</button>
+          </Link>
         </p>
       </Layout>
     )
@@ -40,3 +42,21 @@ class Store extends React.Component {
 }
 
 export default Store
+
+export const query = graphql`
+  query allImgQuery {
+    storeImgs: allFile {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            sizes(maxWidth: 400) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
+  }
+`

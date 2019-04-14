@@ -18,23 +18,24 @@ const IndexPage = () => (
     <p>
       We sell coffee, things to make coffee, books and magazines about coffee,
       pictures of coffee, things with coffee on them, and did we mention coffee?
+      But enough talk, because a picture's worth a thousand words, here's a
+      picture of coffee{" "}
+      <span role="img" aria-label="hand pointing down">
+        👇
+      </span>
     </p>
     <div style={{ maxWidth: `500px`, margin: `auto`, marginBottom: `1.45rem` }}>
       <Image />
-      <p>
-        Photo by{" "}
-        <a
-          href="https://unsplash.com/photos/obV_LM0KjxY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Tina Guina
-        </a>{" "}
-        on Unsplash.
-      </p>
     </div>
     <p>
-      Check out our <Link to="/store/">Coffee First store!</Link>
+      Check out the{" "}
+      <span role="img" aria-label="coffee mug">
+        ☕
+      </span>
+      Coffee First{" "}
+      <Link to="/store/">
+        <button>store</button>
+      </Link>
     </p>
     <h2>This is a Fictitiuos Demo Page</h2>
     <br />
