@@ -12,7 +12,7 @@ const IndexPage = () => (
     <h1>Welcome to Coffee First!</h1>
     <p>
       We believe in viably sourced, single origin, conflict free, sustainably
-      produced, and energy efficient coffee production.
+      produced, and energy efficient produced coffee.
     </p>
     <GetCoffee className="center-svg" />
     <p>
@@ -36,14 +36,6 @@ const IndexPage = () => (
       <Link to="/store/">
         <button>store</button>
       </Link>
-    </p>
-    <h2>This is a Fictitiuos Demo Page</h2>
-    <br />
-    <p>
-      This is an example store using Gatsby, an amazing static site generator
-      that makes use of React to render flat HTML files on the user's end. In
-      this example, we will also utilize/implement a payment API through Stripe
-      for transactions (demo only).
     </p>
   </Layout>
 )
