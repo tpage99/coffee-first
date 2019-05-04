@@ -1,62 +1,34 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
+import Celebration from "../assets/celebration.svg"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import storeItems from "../components/store-items"
-import CoffeeItems from "../components/CoffeeItems"
-import Celebration from "../assets/celebration.svg"
+import Skus from "../components/Products/Skus"
 
-class Store extends React.Component {
-  state = {
-    storeItems,
-  }
-
-  render() {
-    return (
-      <Layout>
-        <SEO title="Store" />
-        <h1 style={{ textAlign: `center` }}>Welcome to Our Store!</h1>
+const Store = () => (
+  <Layout>
+    <SEO title="Store" />
+    <h1 style={{ textAlign: `center` }}>Welcome to Our Store!</h1>
         <Celebration className="center-svg" />
         <p style={{ textAlign: `center` }}>
-          This is where you can shop for all of your coffee needs and wants!
+          This is where you can shop for all of your coffee needs and wants! If you need more information about a product, check out our
+          {" "}<Link to="/inventory">
+          <button>
+            inventory page
+          </button>
+        </Link>{" "}
+        to learn more.
         </p>
-        <ul>
-          {Object.keys(this.state.storeItems).map(key => (
-            <CoffeeItems
-              key={key}
-              index={key}
-              details={this.state.storeItems[key]}
-            />
-          ))}
-        </ul>
-        <p>
+    <Skus /> 
+    <p>
           Our work here is done. Head on back to the{" "}
           <Link to="/">
             <button>homepage</button>
           </Link>
         </p>
-      </Layout>
-    )
-  }
-}
+  </Layout>
+)
 
 export default Store
-
-export const query = graphql`
-  query allImgQuery {
-    storeImgs: allFile {
-      edges {
-        node {
-          relativePath
-          name
-          childImageSharp {
-            sizes(maxWidth: 400) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
-      }
-    }
-  }
-`

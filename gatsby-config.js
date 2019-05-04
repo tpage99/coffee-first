@@ -1,5 +1,9 @@
 const path = require(`path`)
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `☕ Coffee First`,
@@ -8,6 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-stripe`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,6 +22,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ['Sku'],
+        secretKey: process.env.STRIPE_SECRET_KEY,
+        downloadFiles: true,
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,7 +51,7 @@ module.exports = {
         rule: {
           include: /assets/,
         },
-      },
+      }
     },
   ],
 }

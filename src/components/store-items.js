@@ -1,7 +1,6 @@
 const storeItems = {
   item1: {
     name: "Chemex",
-    image: "chemex.jpg",
     desc:
       "Brew coffee the way it was meant to be brewed! With this high quality glass pour-over contraption, you'll have some amazing coffee in 25-45 minutes. But don't worry, it'll be worth the wait.",
     price: 9500,
@@ -10,7 +9,6 @@ const storeItems = {
   },
   item2: {
     name: "Espresso Machine",
-    image: "coffee-home.jpg",
     desc:
       "Enjoy the finest caffeine charged brews that the coffee world has to offer! Whether you're interested in making a traditional strong drink or trying to brew your own Starbucks knockoff, this machine can do it all.",
     price: 300000,
@@ -19,7 +17,6 @@ const storeItems = {
   },
   item3: {
     name: "Dark Night Coffee",
-    image: "coffee-home.jpg",
     desc:
       "Enjoy 40 ounces of the world's finest coffee beans. You can request that they be ground or for whole variety. This coffee isn't joking around and is certain to keep the bad guys away.",
     price: 4000,
@@ -28,7 +25,6 @@ const storeItems = {
   },
   item4: {
     name: "Coffee Filters",
-    image: "coffee-home.jpg",
     desc:
       "Nothing fancy. Just coffee paper to roll the perfect caffeine stogie.",
     price: 2500,
@@ -37,7 +33,6 @@ const storeItems = {
   },
   item5: {
     name: "Coffee T-Shirt",
-    image: "coffee-home.jpg",
     desc:
       "What goes better with coffee than a plain white tshirt? Wear those coffee stains with pride, you whole bean warrior you.",
     price: 1500,
@@ -46,7 +41,6 @@ const storeItems = {
   },
   item6: {
     name: "Coffee Mug",
-    image: "coffee-home.jpg",
     desc:
       "Standard survival gear for any up and coming coffee enthusiast. Enjoy coffee from anywhere with this perfectly sized caffeine container.",
     price: 2000,
@@ -55,7 +49,6 @@ const storeItems = {
   },
   item7: {
     name: "Last Chance Coffee",
-    image: "coffee-home.jpg",
     desc:
       "While we think that coffee should always come first here at Coffee First, we know that you have to sleep sometime. This decaffeinated coffee is perfect for when you need that last sip of the day right before bed.",
     price: 4000,
@@ -64,7 +57,6 @@ const storeItems = {
   },
   item8: {
     name: "Coffee Pants",
-    image: "coffee-home.jpg",
     desc:
       "These are the perfect pants to drink your coffee in. Why is that you ask? Well, because all pants are great for drinking coffee.",
     price: 3500,
