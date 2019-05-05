@@ -63,6 +63,14 @@ const storeItems = {
     category: "Apparel",
     status: "available",
   },
+  item9: {
+    name: "Single Serve Pour-Over",
+    desc:
+      "You don't need people. Just coffee. This single serve pour-over makes for that perfect date with just you and that cup-o-joe.",
+    price: 4500,
+    category: "Brew",
+    status: "available",
+  },
 }
 
 export default storeItems

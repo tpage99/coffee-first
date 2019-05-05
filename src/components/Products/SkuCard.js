@@ -54,6 +54,7 @@ const SkuCard = class extends React.Component {
       <div style={cardStyles}>
         <h4>{sku.attributes.name}</h4>
         <img src={sku.image} alt={sku.attributes.name} />
+        <p>{sku.product.metadata.description}</p>
         <p>Price: {formatPrice(sku.price, sku.currency)}</p>
         <button
           style={buttonStyles}

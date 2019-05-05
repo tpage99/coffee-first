@@ -12,8 +12,9 @@ const Store = () => (
     <SEO title="Store" />
     <h1 style={{ textAlign: `center` }}>Welcome to Our Store!</h1>
         <Celebration className="center-svg" />
-        <p style={{ textAlign: `center` }}>
-          This is where you can shop for all of your coffee needs and wants! If you need more information about a product, check out our
+        <p>
+          This is where you can shop for all of your coffee needs and wants!</p>
+          <p> If you need more information about a product, check out our
           {" "}<Link to="/inventory">
           <button>
             inventory page
