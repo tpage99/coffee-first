@@ -21,7 +21,13 @@ git clone https://github.com/tpage99/coffee-first.git
 npm install
 ```
 
-## Step 3. Be awesome
+## Step 3. to run locally
+
+```sh
+gatsby develop
+```
+
+## Step 4. Be awesome
 
 😎
 
